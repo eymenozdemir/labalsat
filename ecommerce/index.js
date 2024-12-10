@@ -1,11 +1,9 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+const dbConnect = require("./config/dbConnect");
 const app = express();
 const dotenv = require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 const { errorHandler, notFound } = require("./middlewares/errorHandler")
-const dbConnect = require("./config/dbConnect");
 const authRouter = require("./routes/authRoute");
 const brandRouter = require("./routes/brandRoute");
 const pCategoryRouter = require("./routes/prodcategoryRoute");
@@ -15,6 +13,8 @@ const uploadRouter = require("./routes/uploadRoute");
 const enqRouter = require("./routes/enqRoute");
 const contractRouter = require("./routes/contractRoute");
 
+const bodyParser = require("body-parser");
+const cors = require("cors");
 dbConnect();
 
 app.use(cors());

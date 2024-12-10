@@ -7,6 +7,9 @@ export const config = {
     Authorization: `Bearer ${
       getTokenFromLocalStorage !== null ? getTokenFromLocalStorage.token : ""
     }`,
+    AccessControlAllowOrigin: "*",
+    AccessControlAllowCredientials: "true",
+    AccessControlAllowHeaders: 'Authorization',
     Accept: "application/json",
   },
 };

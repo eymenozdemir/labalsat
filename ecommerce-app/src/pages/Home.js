@@ -156,7 +156,7 @@ let brandFilter = [];
 let conditionFilter = [];
 let filteredProducts = [];
 const Home = () => {
-  const { trans } = useTranslation();
+  const { t } = useTranslation();
   const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 1223px)' });
   const productState = useSelector((state) => state?.product?.product);
@@ -327,9 +327,9 @@ const Home = () => {
                 alt="main banner"
               />
               <div className="main-banner-content position-absolute text-white">
-                <h5>{trans("SELL")}</h5>
+                <h5>{t("SELL")}</h5>
                 <p>
-                  {trans("SELL1")}<br />{trans("SELL2")}
+                  {t("SELL1")}<br />{t("SELL2")}
                 </p>
               </div>
             </a>
@@ -345,9 +345,9 @@ const Home = () => {
                 alt="sell banner"
               />
               <div className="main-banner-content position-absolute text-white">
-                <h5>{trans("BUY")}</h5>
+                <h5>{t("BUY")}</h5>
                 <p>
-                  {trans("BUY1")}<br />{trans("BUY2")}
+                  {t("BUY1")}<br />{t("BUY2")}
                 </p>
               </div>
             </a>
@@ -360,9 +360,9 @@ const Home = () => {
                 alt="main banner"
               />
               <div className="main-banner-content position-absolute text-white">
-                <h5>{trans("SERVICE")}</h5>
+                <h5>{t("SERVICE")}</h5>
                 <p>
-                  {trans("SERVICE1")}<br />{trans("SERVICE2")}
+                  {t("SERVICE1")}<br />{t("SERVICE2")}
                 </p>
               </div>
             </a>
@@ -373,11 +373,11 @@ const Home = () => {
         <div className="row">
           <div className="col-3">
             <div className="filter-card mb-3">
-              <h3 className="filter-title">{trans("ByCategory")}</h3>
+              <h3 className="filter-title">{t("ByCategory")}</h3>
               <div>
                 <ul className="ps-0">
                   <li onClick={() => filterFunc("All Categories")}>
-                    {trans("AllCategories")}
+                    {t("AllCategories")}
                   </li>
                   {catState &&
                     [...new Set(catState)].map((item, index) => {
@@ -391,9 +391,9 @@ const Home = () => {
               </div>
             </div>
             <div className="filter-card mb-3">
-              <h3 className="filter-title">{trans("FilterBy")}</h3>
+              <h3 className="filter-title">{t("FilterBy")}</h3>
               <div>
-                <h5 className="sub-title">{trans("Brand")}</h5>
+                <h5 className="sub-title">{t("Brand")}</h5>
                 {brandState &&
                   [...new Set(brandState)].map((item, index) => {
                     return (
@@ -423,7 +423,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex align-items-center gap-10">
                   <p className="total-products mb-0">
-                    {filtered?.length} {trans("Products")}
+                    {filtered?.length} {t("Products")}
                   </p>
                 </div>
               </div>
@@ -568,7 +568,7 @@ const Home = () => {
                 alt="main banner"
               />
               <div className="main-banner-content position-absolute text-white">
-                <h5>{trans("SELL")}</h5>
+                <h5>{t("SELL")}</h5>
               </div>
             </a>
           </div>
@@ -583,7 +583,7 @@ const Home = () => {
                 alt="sell banner"
               />
               <div className="main-banner-content position-absolute text-white">
-                <h5>{trans("BUY")}</h5>
+                <h5>{t("BUY")}</h5>
               </div>
             </a>
           </div>
@@ -597,7 +597,7 @@ const Home = () => {
                 alt="main banner"
               />
               <div className="main-banner-content position-absolute text-white">
-                <h5>{trans("SERVICE")}</h5>
+                <h5>{t("SERVICE")}</h5>
               </div>
             </a>
           </div>
@@ -609,7 +609,7 @@ const Home = () => {
                 alt="main banner"
               />
               <div className="main-banner-content position-absolute text-white">
-                <h5>{trans("HIRING")}</h5>
+                <h5>{t("HIRING")}</h5>
               </div>
             </a>
           </div>
@@ -631,7 +631,7 @@ const Home = () => {
                     <div>
                       <ul className="ps-0">
                         <li onClick={() => filterFunc("All Categories")}>
-                          {trans("AllCategories")}
+                          {t("AllCategories")}
                         </li>
                         {catState &&
                           [...new Set(catState)].map((item, index) => {
@@ -651,7 +651,7 @@ const Home = () => {
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOnex">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnex" aria-expanded="true" aria-controls="collapseOnex">
-                      {trans("FilterByBrand")}
+                      {t("FilterByBrand")}
                     </button>
                   </h2>
                   <div id="collapseOnex" class="accordion-collapse collapse" aria-labelledby="headingOnex" data-bs-parent="#accordionExamplex">
@@ -692,7 +692,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex align-items-center gap-10">
                   <p className="total-products mb-0">
-                    {filtered?.length} {trans("Products")}
+                    {filtered?.length} {t("Products")}
                   </p>
                 </div>
               </div>

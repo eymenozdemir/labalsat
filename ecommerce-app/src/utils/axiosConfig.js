@@ -10,6 +10,10 @@ export const config = {
       Authorization: `Bearer ${
         getTokenFromLocalStorage !== null ? getTokenFromLocalStorage : ""
       }`,
+      ContentType: "application/json",
+      AccessControlAllowOrigin: "*",
+      AccessControlAllowCredientials: "true",
+      AccessControlAllowHeaders: 'Authorization',
       Accept: "application/json",
       User: JSON.parse(localStorage.getItem("customer"))?._id,
     },

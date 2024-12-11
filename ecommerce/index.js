@@ -15,9 +15,18 @@ const contractRouter = require("./routes/contractRoute");
 
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
+const corsOptions = {
+    origin: '*',
+    credentials: true,
+    allowedHeaders: 'Authorization',
+    optionsSuccessStatus: 200,
+  };
+
+  
 dbConnect();
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f81e4581.css",
-    "main.js": "/static/js/main.46d70693.js",
+    "main.js": "/static/js/main.ba4ecd97.js",
     "static/media/yatay-labalsat.png": "/static/media/yatay-labalsat.ae605983e5d3587690e9.png",
     "static/media/sell_banner.jpg": "/static/media/sell_banner.ecd0cfde1d42b7aaf6f8.jpg",
     "static/media/buy_banner.jpg": "/static/media/buy_banner.4c899ee66caaf005b251.jpg",
@@ -27,10 +27,10 @@
     "static/media/wish-black.svg": "/static/media/wish-black.0028fb86b25f703a107bcd5c13d2acd9.svg",
     "static/media/user.svg": "/static/media/user.cd86e0566bbf017c8167249084d368e3.svg",
     "main.f81e4581.css.map": "/static/css/main.f81e4581.css.map",
-    "main.46d70693.js.map": "/static/js/main.46d70693.js.map"
+    "main.ba4ecd97.js.map": "/static/js/main.ba4ecd97.js.map"
   },
   "entrypoints": [
     "static/css/main.f81e4581.css",
-    "static/js/main.46d70693.js"
+    "static/js/main.ba4ecd97.js"
   ]
 }

@@ -2,7 +2,7 @@ import axios from "axios";
 import { base_url, config } from "../../utils/axiosConfig";
 
 const register = async (userData) => {
-    console.log(userData);
+    console.log("serviced", userData);
     const response = await axios.post(`${base_url}user/register`, userData);
     if (response.data) {
         if (response.data) {

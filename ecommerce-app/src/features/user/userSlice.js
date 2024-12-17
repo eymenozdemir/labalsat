@@ -5,6 +5,7 @@ import { authService} from "./userService";
 export const registerUser = createAsyncThunk(
   "auth/register",
   async (userData, thunkAPI) => {
+    console.log("sliced", userData)
     try {
       return await authService.register(userData);
     } catch (error) {
